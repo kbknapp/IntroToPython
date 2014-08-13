@@ -88,6 +88,14 @@ alias lsg='ls --color=auto --group-directories-first'
 alias ls='ls --color=auto'
 alias ll='ls -al --color=auto'
 
+# Pacman settings
+alias install='sudo pacman -S'
+alias search='sudo pacman -Ss'
+alias update='sudo pacman -Syu'
+alias refresh-mirrors='echo "This will take a minute..."; sudo sh -c "rankmirrors -n 5 /etc/pacman.d/mirrorlist-us.backup > /etc/pacman.d/mirrorlist" && sudo pacman -Syy'
+alias community-install='yaourt -S'
+alias community-search='yaourt -Ss'
+
 # git settings
 alias gitlog='git log --graph --all --oneline --decorate'
 alias commit='git commit -am'
@@ -97,5 +105,5 @@ alias push='git push origin'
 alias pull='git pull origin'
 
 # Exports
-export PATH=$PATH:$HOME/Projects/bin
+export PATH=$PATH:$HOME/Projects/bin:$HOME/.bin
 export EDITOR=nano
