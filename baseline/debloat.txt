@@ -1,0 +1,20 @@
+    7  pacman -Qs robots
+    8  pacman -Rns robots
+    9  pacman -Rns gnome-robots
+   10  pacman -Rns nibbles
+   11  pacman -Rns gnome-nibbles
+   12  pacman -Rns xnoise
+   13  pacman -Rns empathy
+   14  pacman -Rns anjuta
+   15  pacman -Rns aisleriot
+   16  pacman -Rns accerciser
+   17  pacman -Rns gnome-sudoku
+   18  pacman -Rns gnome-mahjongg 
+   19  pacman -Rns four-in-a-row
+   20  pacman -Rns five-or-more
+   21  pacman -Rns evolution
+   22  pacman -Rns gnome-klotski
+   23  pacman -Rns iagno
+   24  pacman -Rns gnome-mines polari
+   25  pacman -Rns quadrapassel tali
+   26  pacman -Rns swell-foop transmission-cli transmission-gtk
