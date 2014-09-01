@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="kustom.linux"
+ZSH_THEME="kustom"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -80,27 +80,17 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Set MacVim to vim
-# alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
-
-# Linux settings
-alias llg='ls -al --color=auto --group-directories-first'
-alias lsg='ls --color=auto --group-directories-first'
-alias ls='ls --color=auto'
-alias ll='ls -al --color=auto'
-
-export EDITOR=nano
+alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
 
 # git settings
-alias glog='git log --graph --all --oneline --decorate'
-alias commit='git commit -am'
+alias gl='git log --graph --all --oneline --decorate'
+alias gc='git commit -am'
 alias clone='git clone'
-alias branch='git checkout'
-alias push='git push origin'
-alias pull='git pull origin'
+alias gb='git checkout'
+alias gpo='git push origin'
 
-# Pacman settings
-alias search='yaourt -Ss'
-alias install='yaourt -S'
-alias uninstall='sudo pacman -Rns'
-alias update='yaourt -Syu'
-alias sync-mirrors='echo "Updating package list, this may take a minute..."; su -c "rankmirrors -n 5 /etc/pacman.d/mirrorlist-us > /etc/pacman.d/mirrorlist"; sudo pacman -Syy'
+# Go(lang) Settings
+export GOPATH=$HOME/.go
+export GOBIN=$GOPATH/bin
+export GOROOT=/usr/local/go
+export PATH=/usr/local/bin/:$PATH:$GOBIN:$GOROOT/bin
