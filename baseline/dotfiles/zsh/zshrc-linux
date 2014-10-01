@@ -79,33 +79,24 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Set MacVim to vim
-# alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
-
 # Linux settings
 alias llg='ls -al --color=auto --group-directories-first'
 alias lsg='ls --color=auto --group-directories-first'
 alias ls='ls --color=auto'
 alias ll='ls -al --color=auto'
 
-export EDITOR=vim
+export EDITOR=nano
 
 # git settings
-alias gl='git log --graph --all --oneline --decorate'
-alias gc='git commit -am'
+alias git-log='git log --graph --all --oneline --decorate'
+alias commit='git commit -am'
 alias clone='git clone'
-alias gb='git checkout'
-alias gpo='git push origin'
+alias branch='git checkout'
+alias push='git push origin'
 
-# Go(lang) Settings
-export GOPATH=$HOME/.go
-export GOBIN=$GOPATH/bin
-export GOROOT=/usr/lib/go
-export PATH=/usr/local/bin/:$PATH:$GOBIN:$GOROOT/bin
-
-# Rust(lang) Settings
-export LD_LIBRARY_PATH=/usr/local/lib
-
-# Ruby Settings
-export RUBYBIN=$HOME/.gem/ruby/2.1.0/bin
-export PATH=$PATH:$RUBYBIN
+# Pacman settings
+alias search='yaourt -Ss'
+alias install='yaourt -S'
+alias uninstall='sudo pacman -Rns'
+alias update='yaourt -Syu'
+alias sync-mirrors='echo "Updating package list, this may take a minute..."; su -c "rankmirrors -n 5 /etc/pacman.d/mirrorlist-us > /etc/pacman.d/mirrorlist"; sudo pacman -Syy'
