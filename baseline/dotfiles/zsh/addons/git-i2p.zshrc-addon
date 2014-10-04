@@ -1,0 +1,8 @@
+
+# git settings
+alias git-log='git log --graph --all --oneline --decorate'
+alias commit='git commit -am'
+alias clone='git clone'
+alias branch='git checkout'
+alias push='git push origin'
+
