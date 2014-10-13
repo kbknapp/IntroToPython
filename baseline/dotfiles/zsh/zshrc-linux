@@ -83,10 +83,13 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 my_howto() {
     cat ~/.dotfiles/scripts/usefulcommands.md | grep -A 2 $1 | sed -e '/^```/d'
 }
-alias llg='ls -al --color=auto --group-directories-first'
+alias llg='ls -hal --color=auto --group-directories-first'
 alias lsg='ls --color=auto --group-directories-first'
 alias ls='ls --color=auto'
-alias ll='ls -al --color=auto'
+alias ll='ls -hal --color=auto'
+alias rm='rm -i'
+alias mv='mv -i'
+alias cp='cp -i'
 alias howto=my_howto
 
 export EDITOR=nano
