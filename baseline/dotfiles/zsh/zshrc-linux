@@ -91,6 +91,7 @@ alias rm='rm -i'
 alias mv='mv -i'
 alias cp='cp -i'
 alias howto=my_howto
+alias watch='ssh student@master'
 
 export EDITOR=nano
 
