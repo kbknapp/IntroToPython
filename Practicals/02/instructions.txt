@@ -1,0 +1,6 @@
+One of your network admins has noticed some strange findings in a network log. It appears there are multiple computers attempting to attack our network.
+We need you to find out exactly what MAC addresses and IP addresses we should investigate further.
+
+Goal: Write a script to search "fake-log.txt" and find any occurrence of the MAC addresses listed in "tgt.txt" as well as any additional MAC addresses
+      that we should be interested in. The way we determine if we're interested in them or not, is if any one MAC address connected via a different
+      IP at a different time. Submit your script and the answers for a win!
