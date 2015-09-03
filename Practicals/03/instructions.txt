@@ -20,7 +20,7 @@ digraph contacts {
 
 If that output is saved as "contacts.dot" the following command line run would produce a graph file
 
-dot -Tpng contacts.dot > contacts.png
+dot -Tpng example.dot > example.png
 
 
-See "contacts.png" for an example graph.
+See "example.png" for an example graph.
