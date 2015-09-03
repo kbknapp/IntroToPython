@@ -1,0 +1,8 @@
+A malicious wireless AP has been popping up in your work space. One of your network engineers was able to get the admin password hash, which appears to be MD5.
+In order to better investigate the purposes of this router, you want to log in with the admin user and check the settings.
+
+There was a label on the bottom of the router which said "cowboys####" so we're assuming that has something to do with the password.
+
+Goal: Write a script to try all permutations of "cowboys####" checked against the MD5 hash. If that doesn't work, step through the
+      word "cowboys" making each letter capital and trying all 10,000 versions. Submit your answer, and the script for a win! You
+      can find the password hash in the "hash.txt" file of this directory.
