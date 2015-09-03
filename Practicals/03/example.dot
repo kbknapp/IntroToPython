@@ -1,0 +1,7 @@
+digraph contacts {
+    N1[label="Bob"];
+    N2[label="Rick"];
+    N3[label="Mike"];
+    N1->N2[label=""];
+    N1->N3[label=""];
+}

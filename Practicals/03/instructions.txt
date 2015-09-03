@@ -1,0 +1,26 @@
+It appears the recent attacks were part of an organized ring of inside attacks. One of our network engineers has been able to capture phone logs using company phones.
+We've pulled the phone records for the suspected time period, as a list of those we suspect are involved. We need you to find out who the ring
+leader is, and as a bonus diagram out their organization.
+
+Goal: Write a script to analyze the contact books, vs the overall phone records. Keep in mind, if there are numbers in the phone records not listed in the contact
+      books, we aren't interested in them. We only want to know about contacts and their links in the "contacts.txt" files.
+
+Bonus: Use the Linux program "graphviz" and it's command line application "dot" to draw a diagram of the organization.
+
+Hint: To use "dot" you must make your script write out a dot-format. For example, the following output shows three "nodes", connected in a tree.
+
+digraph contacts {
+    N1[label="Bob"];
+    N2[label="Rick"];
+    N3[label="Mike"];
+    N1->N2[label=""];
+    N1->N3[label=""];
+}
+
+
+If that output is saved as "contacts.dot" the following command line run would produce a graph file
+
+dot -Tpng contacts.dot > contacts.png
+
+
+See "contacts.png" for an example graph.
